@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_paths = ["lib"]
 
-  s.add_dependency("responders", "~> 2.0")
+  # s.add_dependency("responders", "~> 2.0") # For Rails 4.2
+  s.add_dependency("responders", ">= 1.1") # For Rails 3.2+
   s.add_dependency("has_scope",  "~> 0.6.0.rc")
 end
